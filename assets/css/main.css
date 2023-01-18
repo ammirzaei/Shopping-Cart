@@ -72,8 +72,7 @@ header {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-.cart-addShop:hover,
-.cart-addShop:focus {
+.cart-addShop:hover{
   background-color: #0081a7;
   border-color: #0081a7;
   box-shadow: 1px 1px 8px #0081a7;
