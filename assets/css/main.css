@@ -1,0 +1,109 @@
+/* Start Header */
+header {
+  padding: 1.5rem;
+  position: relative;
+}
+.header-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.header-heart {
+  color: red;
+}
+
+.shoppingCart {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+.shoppingCart-section {
+  position: relative;
+}
+
+.shoppingCart-count {
+  background-color: #9878a1;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  top: -5px;
+  right: 14px;
+  width: 28px;
+  height: 30px;
+  text-align: center;
+  font-size: 13.5px;
+  z-index: -1;
+}
+/* End Header */
+
+/* Start Main */
+.carts {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.cart {
+  box-shadow: 1px 1px 15px #d6d6d6;
+  padding: 15px;
+  border-radius: 15px;
+}
+.cart-img {
+  border-radius: 10px;
+}
+.cart-title {
+  text-align: center;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.cart-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  font-size: 15px;
+}
+.cart-addShop {
+  all: unset;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.cart-addShop:hover,
+.cart-addShop:focus {
+  background-color: #0081a7;
+  border-color: #0081a7;
+  box-shadow: 1px 1px 8px #0081a7;
+  color: #fff;
+}
+
+.cart-price::after {
+  content: " تومان";
+}
+/* End Main */
+
+/* Start Responsive */
+@media screen and (max-width: 1279px) {
+  .carts {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .carts {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carts {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+/* End Responsive */
