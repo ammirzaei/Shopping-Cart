@@ -1,0 +1,117 @@
+/* Start Header */
+header {
+  padding: 1.5rem;
+}
+.header-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.header-title .fa {
+  color: #ffd166;
+}
+/* End Header */
+
+/* Start Main */
+main {
+  margin: 0 1rem;
+  box-shadow: 1px 1px 8px #d6d6d6;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Start ShoppingCart Section */
+.shoppingCart {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+}
+
+.shoppingCart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border-bottom: 2px solid #f4f4f4;
+  padding: 1.5rem;
+}
+.shoppingCart-table th {
+  color: #cbcbcb;
+}
+.shoppingCart-table th,
+.shoppingCart-table td {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.shoppingCart-img {
+  border-radius: 10px;
+  width: 100px;
+  height: 120px;
+}
+
+.manage-count .fa {
+  cursor: pointer;
+}
+.manage-count .fa-plus:hover,
+.manage-count .fa-plus:focus {
+  color: green;
+}
+
+.manage-count .fa-minus:hover,
+.manage-count .fa-minus:focus {
+  color: red;
+}
+.counter {
+  background-color: #cdb4db;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.cart-name {
+  text-align: right !important;
+}
+/* End ShoppingCart Section */
+
+/* Start Order Section */
+.order {
+  background-color: #bde0fe;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-header {
+  width: 80%;
+  border-bottom: 2px solid #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+.order-item {
+  width: 60%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.order-item span:first-child::before {
+  content: " * ";
+}
+
+.btn-payment {
+  background-color: #ffd166;
+  color: #333533;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+/* End Order Section */
+
+/* End Main */

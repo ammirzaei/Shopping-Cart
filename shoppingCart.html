@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سبد خرید</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/shoppingCart.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">سبد خرید من <i class="fa fa-shopping-cart"></i></h1>
+    </header>
+    <main>
+        <section class="shoppingCart">
+           <div class="shoppingCart-header">
+               <h2 class="shoppingCart-title">لیست سبد خرید</h2>
+               <p class="shoppingCart-count">5 محصول</p>
+           </div>
+            <table class="shoppingCart-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>عکس</th>
+                        <th>نام</th>
+                        <th>قیمت</th>
+                        <th>تعداد</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="assets/img/shoes/1.jpg" alt="" class="shoppingCart-img">
+                        </td>
+                        <td class="cart-name">
+                            <p>کفش نایک مشکی</p>
+                            <p>450,000</p>
+                        </td>
+                        <td>450,000</td>
+                        <td>
+                            <div class="manage-count">
+                                <span><i class="fa fa-plus"></i></span>
+                                <span class="counter">2</span>
+                                <span><i class="fa fa-minus"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img src="assets/img/shoes/2.jpg" alt="" class="shoppingCart-img">
+                        </td>
+                        <td class="cart-name">
+                            <p>کفش نایک خردلی</p>
+                            <p>450,000</p>
+                        </td>
+                        <td>450,000</td>
+                        <td>
+                            <div class="manage-count">
+                                <span><i class="fa fa-plus"></i></span>
+                                <span class="counter">2</span>
+                                <span><i class="fa fa-minus"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="order">
+            <div class="order-header">
+                <h2>خلاصه سفارش</h2>
+            </div>
+            <div class="order-item">
+                <span>تعداد محصولات : </span>
+                <span>5</span>
+            </div>
+            <div class="order-item">
+                <span>تخفیف : </span>
+                <span>10%</span>
+            </div>
+            <div class="order-item">
+                <span>قیمت کل : </span>
+                <span>100,000,000</span>
+            </div>
+            <a href="#" class="btn-payment">پرداخت</a>
+        </section>
+    </main>
+
+    <script src="assets/js/app2.js" defer></script>
+  </body>
+</html>
