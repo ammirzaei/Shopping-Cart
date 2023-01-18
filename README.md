@@ -1,2 +1,2 @@
 # Shopping-Cart
-Sample shopping cart
+Shopping cart example with browser localStorage
