@@ -21,7 +21,7 @@ function manageCount(e) {
     if (e.target.classList.contains('fa')) {
         const parent = e.target.parentElement.parentElement; // access to the parent element tag(manage-count)
         const counter = parent.querySelector('.counter'); // access to the counter
-        const id = parent.getAttribute('data-id'); // access to the product id
+        const id = parent.parentElement.getAttribute('data-id'); // access to the product id
 
         if (e.target.classList.contains('fa-plus')) {
             counter.textContent = Number(counter.innerText) + 1; // increase count
