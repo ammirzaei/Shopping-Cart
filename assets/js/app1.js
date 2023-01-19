@@ -19,7 +19,7 @@ function addToShoppingCart(e) {
         const product = {
             image: cart.querySelector('.cart-img').src,
             title: cart.querySelector('.cart-title').innerText,
-            price: cart.querySelector('.cart-price').innerText,
+            price: Number(cart.querySelector('.cart-price').getAttribute('data-price')),
             id: cart.getAttribute('data-id'),
             count: 1
         }
