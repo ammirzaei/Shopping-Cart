@@ -54,42 +54,47 @@ main {
   width: 120px;
   height: 120px;
 }
-.manage-count{
+.manage-count {
   display: flex;
   justify-content: center;
+  border: 1px solid #cdb4db;
+  border-radius: 5px;
   align-items: center;
 }
-.manage-count span{
+.manage-count span {
   margin: 0 1px;
+  padding: 10px;
 }
 .manage-count .fa {
   cursor: pointer;
 }
 .manage-count .fa-plus:hover,
-.manage-count .fa-plus:focus {
+.manage-count .fa-plus:focus,
+.manage-count .fa-plus:active {
   color: green;
 }
 
 .manage-count .fa-minus:hover,
-.manage-count .fa-minus:focus {
+.manage-count .fa-minus:focus,
+.manage-count .fa-minus:active {
   color: red;
 }
 .counter {
   background-color: #cdb4db;
-  padding: 4px 6px;
-  border-radius: 5px;
 }
 
 .cart-title {
   text-align: right !important;
 }
 
-.cart-title p:nth-child(2){
+.cart-title p:nth-child(2) {
   font-size: 14px;
   color: #cbcbcb;
 }
-.cart-price::after , #order-total::after , #order-totalDiscount::after{
-  content: ' تومان';
+.cart-price::after,
+#order-total::after,
+#order-totalDiscount::after {
+  content: " تومان";
 }
 /* End ShoppingCart Section */
 
@@ -124,7 +129,7 @@ main {
   color: #333533;
   padding: 1rem;
   border-radius: 5px;
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: 1rem 0;
 }
@@ -134,26 +139,25 @@ main {
 /* End Main */
 
 /* Start Responsive */
-@media screen and (max-width: 1279px)
-{
-  main{
+@media screen and (max-width: 1279px) {
+  main {
     grid-template-columns: 60% 40%;
   }
   .shoppingCart-table th,
-.shoppingCart-table td {
-  padding: 1rem;
-}
+  .shoppingCart-table td {
+    padding: 1rem;
+  }
 }
 
-@media screen and (max-width: 900px)
-{
-  main{
+@media screen and (max-width: 900px) {
+  main {
     grid-template-columns: 1fr;
-    margin: 0 5px;
+    margin: 0 8px;
+    margin-bottom: 1rem;
   }
   .shoppingCart-table th,
   .shoppingCart-table td {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .shoppingCart-img {
     width: 100px;
@@ -168,6 +172,17 @@ main {
   .shoppingCart-img {
     width: 90px;
     height: 90px;
+  }
+  .order-item {
+    width: 80%;
+  }
+  .manage-count span {
+    padding: 5px;
+  }
+  .shoppingCart-header,
+  .order-header,
+  .btn-payment {
+    width: 90%;
   }
 }
 /* End Responsive */
