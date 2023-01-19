@@ -18,7 +18,7 @@
         <section class="shoppingCart">
            <div class="shoppingCart-header">
                <h2 class="shoppingCart-title">لیست سبد خرید</h2>
-               <p class="shoppingCart-count">5 محصول</p>
+               <p class="shoppingCart-count">0 محصول</p>
            </div>
             <table class="shoppingCart-table">
                 <thead>
@@ -26,17 +26,17 @@
                         <th>#</th>
                         <th>عکس</th>
                         <th>نام</th>
-                        <th>قیمت</th>
+                        <th>قیمت نهایی</th>
                         <th>تعداد</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>1</td>
                         <td>
                             <img src="assets/img/shoes/1.jpg" alt="" class="shoppingCart-img">
                         </td>
-                        <td class="cart-name">
+                        <td class="cart-title">
                             <p>کفش نایک مشکی</p>
                             <p>450,000</p>
                         </td>
@@ -48,26 +48,7 @@
                                 <span><i class="fa fa-minus"></i></span>
                             </div>
                         </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <img src="assets/img/shoes/2.jpg" alt="" class="shoppingCart-img">
-                        </td>
-                        <td class="cart-name">
-                            <p>کفش نایک خردلی</p>
-                            <p>450,000</p>
-                        </td>
-                        <td>450,000</td>
-                        <td>
-                            <div class="manage-count">
-                                <span><i class="fa fa-plus"></i></span>
-                                <span class="counter">2</span>
-                                <span><i class="fa fa-minus"></i></span>
-                            </div>
-                        </td>
-                    </tr>
+                    </tr> -->    
                 </tbody>
             </table>
         </section>
@@ -76,16 +57,16 @@
                 <h2>خلاصه سفارش</h2>
             </div>
             <div class="order-item">
-                <span>تعداد محصولات : </span>
-                <span>5</span>
+                <span>درصد تخفیف : </span>
+                <span id="order-discount"></span>
             </div>
             <div class="order-item">
-                <span>تخفیف : </span>
-                <span>10%</span>
+                <span>مبلغ سود : </span>
+                <span id="order-totalDiscount"></span>
             </div>
             <div class="order-item">
-                <span>قیمت کل : </span>
-                <span>100,000,000</span>
+                <span>قیمت پرداختی : </span>
+                <span id="order-total"></span>
             </div>
             <a href="#" class="btn-payment">پرداخت</a>
         </section>
