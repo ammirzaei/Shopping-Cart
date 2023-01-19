@@ -61,7 +61,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 1rem auto;
   font-size: 15px;
 }
 .cart-addShop {
@@ -70,9 +70,10 @@ header {
   border-radius: 5px;
   border: 1px solid silver;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-in-out;
 }
-.cart-addShop:hover{
+
+.cart-addShop:active {
   background-color: #0081a7;
   border-color: #0081a7;
   box-shadow: 1px 1px 8px #0081a7;
@@ -99,10 +100,27 @@ header {
   }
 }
 
+@media screen and(min-width: 769px) {
+}
+
 @media screen and (max-width: 500px) {
   .carts {
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
+  }
+  .shoppingCart {
+    top: 1.5rem;
+    left: 3px;
+  }
+  .shoppingCart-img {
+    width: 50px;
+    height: 50px;
+  }
+  .shoppingCart-count {
+    top: -5px;
+    right: 12px;
+    width: 23px;
+    font-size: 13px;
   }
 }
 /* End Responsive */
