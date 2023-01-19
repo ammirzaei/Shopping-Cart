@@ -138,9 +138,9 @@ function createAllProducts(products) {
             <td class="cart-price">${(product.price * product.count).toLocaleString()}</td>
             <td>
                 <div class="manage-count" data-id="${product.id}">
-                    <span><i class="fa fa-plus"></i></span>
+                    <span class="fa fa-plus"></span>
                     <span class="counter">${product.count}</span>
-                    <span><i class="fa fa-minus"></i></span>
+                    <span class="fa fa-minus"></span>
                 </div>
             </td>
         `;
