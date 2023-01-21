@@ -157,6 +157,9 @@ main {
     margin: 0 8px;
     margin-bottom: 1rem;
   }
+  .shoppingCart {
+    padding-bottom: 1.5rem;
+  }
   .shoppingCart-table th,
   .shoppingCart-table td {
     padding: 0.5rem;
@@ -193,7 +196,7 @@ main {
 
   .shoppingCart-table th:first-child,
   .shoppingCart-table td:first-child {
-    padding: .3rem;
+    padding: 0.3rem;
   }
 }
 /* End Responsive */
